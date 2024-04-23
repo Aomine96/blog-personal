@@ -1,0 +1,198 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+---
+
+<!doctype html>
+<BaseLayout PageID="home">
+  <BaseCard image="/home.webp" title="home">
+    <h1 id="h1">Hi! Hola 👋</h1>
+    <h2 id="h2">Soy Gustavo Villegas ⚔️</h2> 
+    <hr />
+
+    <p>
+      Bienvenidos a mi espacio digital, me encanta todo lo relacionado con las tecnologías de la información, 
+      me da la oportunidad de crear todo tipo de cosas interesantes con mis propias manos. Como Ingeniero en Sistemas, 
+      mi viaje comenzó en los pasillos universitarios del Instituto Tecnológico de Toluca 🏫, 
+      donde descubrí una pasión que trascendería mi carrera: el desarrollo web 🌐. 
+      Fascinado por el diseño y desarrollo, decidí construir este blog usando <a style="font-weight:bold;"
+        href="https://astro.build/">Astro</a
+      >, aprovechando su eficiencia y modernidad para crear una experiencia web óptima. <br><br>
+      <em style="font-weight:bold;">"Cada línea de código es como una nota en una melodía, cada sitio web terminado, una sinfonía". <br><br></em>
+      Aquí, compartire mis experiencias como profesional independiente 🚀.
+      <br><br>
+      Este blog es más que un portafolio; es un diario 📖 de mi aventura en el vasto mundo de la programación. 
+      Pero hay más en mi vida que protocolos y páginas web. 
+      La música 🎸 es mi compañera constante, me encanta cantar y tocar la guitarra en mis tiempos libres. 
+      Y cuando el código y las cuerdas descansan, me sumerjo en universos alternativos a través de los videojuegos 🎮, buscando inspiración en cada misión y paisaje virtual.
+    </p>
+
+<a class="btn" href="https://villcode.com" target="_blank" _msttexthash="198640" _msthash="27">Conoce mi Empresa de Desarrollo Web</a>
+
+    <!--
+    <button style="color: #36D222; font-weight:bold;"><a href="https://villcode.com" target="_blank">Visíta mi Agencia</a></button>
+-->
+<!--
+    <h2>Key Features:</h2>
+
+    <ul>
+      <li>
+        <strong>Simplicity:</strong> Frosti boasts a minimalist design that puts
+        your content front and center.
+      </li>
+      <li>
+        <strong>Speed:</strong> With excellent loading times, Frosti ensures that
+        your readers won't be kept waiting.
+      </li>
+      <li>
+        <strong>Day/Night Modes:</strong> Enjoy reading your favorite blogs in both
+        light and dark modes for enhanced comfort.
+      </li>
+      <li>
+        <strong>Component Rich:</strong> Frosti comes equipped with a variety of
+        components to enrich your articles and pages.
+      </li>
+      <li>
+        <strong>Comment System:</strong> Built-in comment system powered by <a
+          href="https://waline.js.org/">Waline</a
+        > for easy interaction with your readers.
+      </li>
+      <li>
+        <strong>Stylish Design:</strong> Crafted with <a
+          href="https://tailwindcss.com/">Tailwind CSS</a
+        > and <a href="https://daisyui.com/">daisyUI</a>, Frosti offers visually
+        appealing pages that captivate your audience.
+      </li>
+    </ul>
+
+    <h2>Project Structure:</h2>
+    <pre
+      class="astro-code github-dark mockup-code"
+      style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;"
+      tabindex="0"
+      data-language="sh"><code><span class="line"><span style="color:#B392F0">\Frosti</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> astro.config.mjs</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> categories.txt</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> index.png</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> package-lock.json</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> package.json</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> pnpm-lock.yaml</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> public</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> favicon.svg</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> fonts</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> CascadiaCode.woff2</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> home.webp</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> profile.webp</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> README.md</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> README.zh-CN.md</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> src</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> components</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> BaseCard.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> BaseHead.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> blog</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> error.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> info.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> success.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> warning.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> Comment.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> EnvelopeCard.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> Footer.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> FormattedDate.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> Header.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> HeaderLink.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> License.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> page</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> FriendCard.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> TimeLine.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> ProfileCard.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> ProfileCardFooter.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> ProfileCardMenu.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> ThemeIcon.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> consts.ts</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> content</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> blog</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> markdown-style-guide.md</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> using-mdx.mdx</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> config.ts</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> env.d.ts</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> layouts</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> BaseLayout.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> pages</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> about.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> blog</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> tag</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#E1E4E8"> [...page].astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#E1E4E8"> [...slug].astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> friend.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> index.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> project.astro</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> rss.xml.js</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  ├──</span><span style="color:#9ECBFF"> scripts</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#F97583">  |</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> copybutton.mjs</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">  └──</span><span style="color:#9ECBFF"> styles</span></span>
+      <span class="line"><span style="color:#F97583">|</span><span style="color:#B392F0">     └──</span><span style="color:#9ECBFF"> global.css</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> tailwind.config.js</span></span>
+      <span class="line"><span style="color:#B392F0">├──</span><span style="color:#9ECBFF"> tsconfig.json</span></span>
+      <span class="line"><span style="color:#B392F0">└──</span><span style="color:#9ECBFF"> view.png</span></span>
+      <span class="line" /></code></pre>
+
+    <h2>How to Use:</h2>
+
+    <p>
+      Getting started with Frosti is a breeze! Simply use the <code
+        >--template</code
+      > parameter with the <code>create astro</code> command:
+    </p>
+    <pre
+      class="astro-code github-dark mockup-code"
+      style="background-color:#24292e;color:#e1e4e8;overflow-x:auto"
+      tabindex="0"
+      data-language="sh"><code><span class="line"><span style="color:#B392F0">npm</span><span style="color:#9ECBFF"> create</span><span style="color:#9ECBFF"> astro@latest</span><span style="color:#79B8FF"> --</span><span style="color:#79B8FF"> --template</span><span style="color:#9ECBFF"> EveSunMaple/Frosti</span></span></code></pre>
+
+    <h2>Future Plans:</h2>
+
+    <p>
+      While Frosti is already an impressive template, the developers have
+      exciting plans for its future development:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Table of Contents:</strong> Enhance navigation with a table of contents
+        feature.
+      </li>
+      <li>
+        <strong>Timeline Component:</strong> Add a timeline component for showcasing
+        chronological content.
+      </li>
+      <li>
+        <strong>Friends Link Component:</strong> Foster community engagement with
+        a friends link component.
+      </li>
+    </ul>
+
+    <h2>Acknowledgments:</h2>
+
+    <p>
+      Frosti wouldn't be possible without the contributions and inspiration
+      from:
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://github.com/saicaca">Saicaca</a>: Whose insights were
+        instrumental in the creation of this theme.
+      </li>
+      <li>
+        <a href="https://github.com/WRXinYue">WRXinYue</a>: For invaluable
+        assistance during the early stages of development.
+      </li>
+    </ul>
+
+    <p>
+      Whether you're a seasoned blogger or just starting out, Frosti provides
+      the perfect platform to share your thoughts with the world. Try Frosti
+      today and elevate your blogging experience!
+    </p> -->
+  </BaseCard>
+</BaseLayout>

@@ -1,0 +1,39 @@
+---
+const { PageID } = Astro.props;
+const activeClass = "on"; // For primary color replace with `active` class
+---
+
+<ul class="menu bg-base-100 w-full">
+  <li style=""><a class="menu-item p-4" id="home" href="/">Inicio</a></li>
+  <style>
+  @media (min-width: 1024px){
+.espaciador {
+  margin: 5px; /* Ajusta este valor para cambiar el tamaño del espaciador */
+}
+  }
+</style>
+
+<div class="espaciador"></div>
+  <li><a class="menu-item p-4" id="about" href="/about">Acerca de</a></li>
+  <div class="espaciador"></div>
+  <li><a class="menu-item p-4" id="blog" href="/blog">Blog</a></li>
+  <div class="espaciador"></div>
+  <li><a class="menu-item p-4" id="project" href="/project">Proyectos</a></li>
+  <div class="espaciador"></div>
+  <li><a class="menu-item p-4" id="friend" href="/friend">Amigos</a></li>
+  <div class="espaciador"></div>
+  <li>
+    <a
+      class="menu-item p-4"
+      href="mailto:info@villcode.com"
+      target="_blank"
+      referrerpolicy="no-referrer-when-downgrade">Contacto</a
+    >
+  </li>
+  <div class="espaciador"></div>
+</ul>
+
+<script define:vars={{ sideBarActiveItemID: PageID, activeClass: activeClass }}>
+  const activeItemElem = document.getElementById(sideBarActiveItemID);
+  activeItemElem && activeItemElem.classList.add(activeClass);
+</script>
